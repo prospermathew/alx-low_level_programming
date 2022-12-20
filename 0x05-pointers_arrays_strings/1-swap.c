@@ -2,18 +2,20 @@
 #include <stdio>
 
 /**
- * swap_int - swaping 2 integer using a pointer
- * @a:integer
- * @b:integer
- * Return:void
+ * swap_int - swaps the values of two integers.
+ *
+ * @a: arg a
+ *
+ * @b: arg b
+ *
+ * Return: void.
  */
+
 void swap_int(int *a, int *b)
 {
-	int x;
+	int c;
 
-	x = *a;
+	c = *a;
 	*a = *b;
-	*b = x;
-	return;
-
+	*b = c;
 }
