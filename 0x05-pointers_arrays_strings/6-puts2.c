@@ -1,23 +1,21 @@
-#include "main.h"
-#include <stdio.h>
+   include "main.h"
 
-/**
- * puts2 -  prints a string
- *
- * @str: arg *str
- *
- * Return: string to stdout
- */
+  /** 
+   *puts2 - prints string, followed by a new line, 
+   * @str: pointer to the string to point 
+   * Return: void
+   */
+   int void_puts2(char *str) 
+  {
+      int i = 0;
 
-void puts2(char *str)
-{
-	int i;
-
-	while (str[i] != '\0')
-	{
-		if (i % 2 == 0)
-			_putchar(str[i]);
-		i++;
-	}
-	_putchar('\n');
-}
+     while (str[i] != '\0' ) 
+{   
+     if (i % 2 == 0) 
+   {
+        _putchar(str[i]);
+} 
+     i++;
+  } 
+     _putchar('\n');
+} 
