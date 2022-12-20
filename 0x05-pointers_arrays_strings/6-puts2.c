@@ -2,21 +2,22 @@
 #include <stdio>
 
 /**
- * puts2 - function should print only one character out of two
- * starting with the first one
- * @str: input
- * Return: print
+ * puts2 - print  every other character of a string
+ * @str:pointer char
+ * return:void
  */
 void puts2(char *str)
 {
-	int n = 0;
-
-	for (; str[n] != '\0'; n++)
+	int i, x;
+i = 0;
+x = 0;
+	while (str[i++])
 	{
-		if ((n % 2) == 0)
-			_putchar(str[n]);
-		else
-			continue;
+		x++;
 	}
-	_putchar('\n');
+for (i = 0; i < x; i += 2)
+{
+_putchar(*(str + i));
+}
+_putchar('\n');
 }
